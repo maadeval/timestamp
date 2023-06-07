@@ -13,17 +13,6 @@ jobs:
     steps:
       - name: Cancel Previous Builds
         uses: styfle/cancel-workflow-action@0.9.1
-
-  auto-assign:
-    name: '🙌 Auto Assign'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: '🙌 Auto Assign'
-        uses: danielswensson/auto-assign-owner-action@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
   lint:
     runs-on: ubuntu-latest
     name: '🔮 Linting'
