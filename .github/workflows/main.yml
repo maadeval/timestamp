@@ -3,8 +3,7 @@ name: 🛠 Workflow - Pull Request 🤝
 on:
   pull_request:
     branches:
-      - 'feature-**'
-      - 'bugfix-**'
+      - main
 
 jobs:
   check-skip:
